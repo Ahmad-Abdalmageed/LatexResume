@@ -3,10 +3,10 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=2 cm, % seperation between body and page edge from the top
-    bottom=2 cm, % seperation between body and page edge from the bottom
-    left=2 cm, % seperation between body and page edge from the left
-    right=2 cm, % seperation between body and page edge from the right
+    top=1 cm, % seperation between body and page edge from the top
+    bottom=1 cm, % seperation between body and page edge from the bottom
+    left=1 cm, % seperation between body and page edge from the left
+    right=1 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
@@ -75,8 +75,8 @@
         topsep=0.10 cm,
         parsep=0.10 cm,
         partopsep=0pt,
-        itemsep=0pt,
-        leftmargin=0 cm + 10pt
+        itemsep=1pt,
+        leftmargin=0 cm + 12pt
     ]
 }{
     \end{itemize}
@@ -162,8 +162,10 @@
 
     \begin{header}
         \fontsize{25 pt}{25 pt}\selectfont Ahmed Abdelmageed
-
         % \vspace{5 pt}
+        \vspace{0.5 pt}
+
+        \fontsize{15 pt}{15 pt}\selectfont Software Engineer
 
         \normalsize
         \kern 5.0 pt%
@@ -175,15 +177,11 @@
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/ahmadabdalmageed/}{\faLinkedin \space Linkedin}}%
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/ahmadabdalmageed/}{\faLinkedin \space /ahmadabdalmageed}}%
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://github.com/Ahmad-Abdalmageed}{\faGithub \space Github }}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://leetcode.com/u/Ahmad-Abdalmageed/}{\faCode \space LeetCode}}%
+        \mbox{\hrefWithoutArrow{https://github.com/Ahmad-Abdalmageed}{\faGithub \space /Ahmad-Abdalmageed }}%
         \kern 5.0 pt%
         \AND%
     \end{header}
@@ -191,132 +189,65 @@
     % \vspace{5 pt - 0.3 cm}
 
 
-    % \section{Welcome to RenderCV!}
-
-
-
-        
-    %     \begin{onecolentry}
-    %         \href{https://rendercv.com}{RenderCV} is a LaTeX-based CV/resume version-control and maintenance app. It allows you to create a high-quality CV or resume as a PDF file from a YAML file, with \textbf{Markdown syntax support} and \textbf{complete control over the LaTeX code}.
-    %     \end{onecolentry}
-
-    %     \vspace{0.2 cm}
-
-    %     \begin{onecolentry}
-    %         The boilerplate content was inspired by \href{https://github.com/dnl-blkv/mcdowell-cv}{Gayle McDowell}.
-    %     \end{onecolentry}
-
-
-    
-    % \section{Quick Guide}
-
-    % \begin{onecolentry}
-    %     \begin{highlightsforbulletentries}
-
-
-    %     \item Each section title is arbitrary and each section contains a list of entries.
-
-    %     \item There are 7 unique entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
-
-    %     \item Select a section title, pick an entry type, and start writing your section!
-
-    %     \item \href{https://docs.rendercv.com/user_guide/}{Here}, you can find a comprehensive user guide for RenderCV.
-
-
-    %     \end{highlightsforbulletentries}
-    % \end{onecolentry}
-
-
     % \section{Summary}
     %     \begin{onecolentry}
             
     %         Dedicated Backend Developer with a Bachelor's degree in Biomedical Engineering from Cairo University and over 2 years of experience in building scalable and efficient REST APIs for web and mobile applications. 
-    %         Proficient in \textbf{NodeJs}, \textbf{Express}, \textbf{MongoDB}, and \textbf{REST} APIs, with a strong focus on CI/CD practices. 
+    %         Proficient in \textbf{Node.js}, \textbf{Express}, \textbf{MongoDB}, and \textbf{REST} APIs, with a strong focus on CI/CD practices. 
     %         Passionate about continuous learning and software engineering, I strive to be a diligent learner and problem solver, eager to tackle complex challenges and contribute to innovative solutions.
     %     \end{onecolentry}
     % \vspace{0.2 cm}
 
     \section{Experience}
-        \begin{twocolentry}{
-            Dec 2022 – Present
-        }
-            \textbf{Backend Developer}, \href{https://dealapp.sa/tabs/home}{\textit{Dealapp}} -- Remote\end{twocolentry}
-
+        \begin{twocolentry}{ Dec 2022 – Present}
+            \textbf{Backend Developer}, \href{https://dealapp.sa/tabs/home}{\textit{Dealapp}} -- Remote
+        \end{twocolentry}
         \vspace{0.1 cm}
         \begin{onecolentry}
+            \textbf{Technologies:} Node.js, Express.js, MongoDB, Swagger (API Documentation), AWS , Terraform
+        \end{onecolentry}
+        \vspace{0.1 cm}
+
+        \begin{onecolentry}
             \begin{highlights}
-                \item Develop and maintain scalable \textbf{REST APIs} for \textbf{CRUD} operations using \textbf{NodeJs}, \textbf{Express}, and \textbf{MongoDB}.
-                \item Optimize \textbf{MongoDB indexes} adhering to best practices such as query coverage, ESR rule, and top-k sorting.
-                \item Apply \textbf{Design Patterns} and \textbf{Clean Code} principles for code refactoring, decreasing technical debt.
-                \item Document APIs using \textbf{Swagger}, and maintain a \textbf{Markdown}-based API documentation on GitHub Pages.
-                \item Participate in \textbf{Code Reviews}, ensuring a bug-free and consistent codebase.
-                \item Implement \textbf{Unit \& Integration tests} using \textbf{MochaJS}.
-                \item Integrate with \textbf{Third-party APIs} such as \textbf{Twilio} for SMS services and \textbf{Zoho} for payments.
-                \item Contribute to \textbf{Onboarding} new team members and setting up development environments.
-                \item Provide \textbf{Product Ownership} and support for cross-team initiatives.
-                % \item Generate reports from the database extracting key insights, improving company products.
+                \item Develop and maintain scalable \textbf{REST APIs}, optimizing high-traffic CRUD operations for thousands of active users.  
+                \item Optimize \textbf{MongoDB indexes} using best practices like query coverage, ESR rule, and top-k sorting for efficiency.  
+                \item Refactored legacy code in Subscriptions, enhancing performance and driving a 50\% increase in subscribed users.  
+                \item Implement \textbf{Unit \& Integration tests} using \textbf{MochaJS}, ensuring 90\% test coverage across services.  
+                \item Integrate with \textbf{Third-party APIs} to enable WhatsApp messaging, leading to increased website traffic.
+                \item Contributed to building an \textbf{AI-powered RAG} solution, enabling admins to derive insights from the database.  
+                \item Assisted in migrating the platform to Infrastructure as Code using \textbf{Terraform} and \textbf{AWS}.  
                 
-                % % \item Create MongoDB indexes to ensure queries utilize IXSCAN for optimal performance.
-                % % \item Develope aggregation pipelines while managing memory limitations.
-                % % \item Apply data modeling best practices by identifying workloads and utilizing embedded documents and references to enhance performance.
-                % \item Applied \textbf{Design Patterns} and \textbf{Clean Code} principles for code refactoring decreasing technical debt. 
-                % \item Documented APIs using \textbf{Swagger}, and maintained a \textbf{Markdown}-based API documentation on GitHub Pages.
-                % % \item Handled errors in a bilingual application using I18Next to provide localized error messages for thousands of users.
-                % \item Participated in \textbf{Code Reviews}, ensuring a bug-free and consistent codebase.
-                % \item Implemented \textbf{Unit \& Integration testing} using \textbf{MochaJS}.
-                % % \item Applied \textbf{Design Patterns} for code refactoring and managed technical debt.
-                % \item Integrated with Saudi government APIs for authentication and authorization of Saudi citizens.
-                % \item Integrated with \textbf{Third-party APIs} such as \textbf{Twilio} for SMS services and \textbf{Zoho} for payments.
-                % \item Contributed to \textbf{Onboarding} new team members and setting up development environments.
-                % % \item Implemented loggers and Slack notifications to improve bug resolution, enhance system monitoring, and generate performance reports
-                % \item Provided product ownership and support for cross-team initiatives.
             \end{highlights}
         \end{onecolentry}
-    \vspace{0.1 cm}
+
+        \vspace{0.1 cm}
+
+        \begin{twocolentry}{ Jan 2025 – Present}
+            \textbf{Freelance Backend Developer}, \href{https://www.upwork.com/freelancers/~01692416cd8597ae37?mp_source=share}{\textit{Upwork}} 
+        \end{twocolentry}
+        \vspace{0.1 cm}
+
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed a \textbf{Web scraping script} to extract company contact information and locations for a GIS application.
+                \item Designed and optimized a \textbf{MySQL} database to store and efficiently query the scraped data.
+                \item Enhanced script performance by implementing multithreading reducing execution time from 36 hours to 2 hours.
+                % \item Integrated proxy-based IP rotation to bypass anti-scraping measures and ensure uninterrupted data extraction.
+                
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.1 cm}
 
     \section{Education}
         \begin{twocolentry}{
             Sept 2017 – Aug 2021
         }    
-            \textbf{Cairo University, Faculty of Engineering} \newline Bachelor of Science in Biomedical Engineering - \href{https://drive.google.com/file/d/1ebMfVvXX2HhpQ__EYm0ddEoKS-hMXUMt/view?usp=sharing}{\textit{certificate}} \end{twocolentry}
+            \textbf{Cairo University, Faculty of Engineering} -- Bachelor of Science in Biomedical Engineering 
+        \end{twocolentry}  
+        \vspace{0.10 cm}
 
-        % \vspace{0.10 cm}    
-        % \begin{onecolentry}
-        %     \begin{highlights}
-        %         \item \textbf{Graduation Project:} Led the deep learning aspect of the project using Python and TensorFlow to develop models from scratch, achieving a 90\% Dice Coefficient score. Published in IEEE: \href{https://ieeexplore.ieee.org/document/10510468}{\textit{publication}}, \href{https://github.com/Automated-CAD-Scoring-Suite/Automatic-CaScoring-From-Chest-CT}{\textit{Github Repository}}
-        %     \end{highlights}    
-        % \end{onecolentry}    
-    \vspace{0.05 cm}
-
-    \section{Certifications}
-        \begin{twocolentry} {
-            Jun 2022
-        } \textbf{Advanced Full-Stack Web Developement Nanodegree} -- Udacity, \href{https://www.udacity.com/certificate/FSGKYGKA}{\textit{certificate}}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item \textbf{Related Skills}: TypeScript, NodeJs, Express, PostgreSQL, CI/CD, Testing
-            \end{highlights}
-        \end{onecolentry}
-            
-        \end{twocolentry}
-        
-        \vspace{0.1 cm}
-
-        \begin{twocolentry} {
-            Dec 2022
-        } \textbf{M201: MongoDB Performance} -- MongoDB, \href{https://learn.mongodb.com/c/8m8_F0jdSJmwhVaylvIzEA}{\textit{certificate}}
-        \begin{onecolentry}
-            \begin{highlights}
-                % \item Helped grasping key concepts of query optimization,performance tuning.
-                \item \textbf{Related Skills}: MongoDB Aggregations, Query Optimization, and Indexing.
-            \end{highlights}
-        \end{onecolentry}
-            
-        \end{twocolentry}
-    \vspace{0.1 cm}
-
-    
-    \section{Projects}
         \begin{twocolentry}{
             \href{https://ieeexplore.ieee.org/document/10510468}{\textit{Publication}} -- \href{https://github.com/Automated-CAD-Scoring-Suite/Automatic-CaScoring-From-Chest-CT}{\textit{Github}}
         }
@@ -329,9 +260,22 @@
                 \item Participated in writing and publication of the project paper on \textbf{IEEE}. 
             \end{highlights}
         \end{onecolentry}
+    \vspace{0.1 cm}
 
+    \section{Projects}
+        % \begin{twocolentry}{
+        %     \href{https://ieeexplore.ieee.org/document/10510468}{\textit{Publication}} -- \href{https://github.com/Automated-CAD-Scoring-Suite/Automatic-CaScoring-From-Chest-CT}{\textit{Github}}
+        % }
+        %     \textbf{Graduation Project - Automated CA Score }\end{twocolentry}
 
-        \vspace{0.2 cm}
+        % \vspace{0.10 cm}
+        % \begin{onecolentry}
+        %     \begin{highlights}
+        %         \item Implemented \textbf{Deep Learning} models using \textbf{Python} from scratch, achieving a 90\% Dice Coefficient score.
+        %         \item Participated in writing and publication of the project paper on \textbf{IEEE}. 
+        %     \end{highlights}
+        % \end{onecolentry}
+        % \vspace{0.2 cm}
 
         \begin{twocolentry}{
             \href{https://github.com/Ahmad-Abdalmageed/Store-API}{\textit{Github}}
@@ -359,8 +303,7 @@
         \begin{onecolentry}
             \begin{highlights}
                 \item Built an API for monitoring server and API statuses with email notificaiton service for servers real time updates.
-                \item Used EventEmitter and NodeJs's built-in modules to create a real-time monitoring service.
-                % \item \textbf{Tools}: NodeJs, Express, MongoDB
+                \item Used EventEmitter and Node.js's built-in modules to create a real-time monitoring service.
             \end{highlights}
         \end{onecolentry}
 
@@ -377,32 +320,62 @@
             \begin{highlights}
                 \item Built an API for creating and managing Blog posts along with User Authentication and Authorization.
                 \item Added Swagger documentation for full REST API description
-                % \item \textbf{Tools}: NodeJs, Express, MongoDB 
             \end{highlights}
         \end{onecolentry}
     % \vspace{0.1 cm}
 
 
+    \section{Courses \& Certifications}
+    \begin{twocolentry} {
+        Jun 2022
+    } \textbf{Advanced Full-Stack Web Developement Nanodegree} -- Udacity, \href{https://www.udacity.com/certificate/FSGKYGKA}{\textit{certificate}}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item \textbf{Related Skills}: TypeScript, Node.js, Express, PostgreSQL, CI/CD, Testing
+        \end{highlights}
+    \end{onecolentry}
+        
+    \end{twocolentry}
     
-    \section{Technical Skills}
-        
-        \begin{onecolentry}
-            \textbf{Programming Languages:} C++ | JavaScript | Python | TypeScript | Markdown | LaTeX
-        \end{onecolentry}
+    \vspace{0.1 cm}
 
-        \begin{onecolentry}
-            \textbf{Technologies:} NodeJs | ExpressJs | Mocha | Jasmine | Jest | Swagger | CircleCI | Docker | Git
-        \end{onecolentry}
+    \begin{twocolentry} {
+        Dec 2022
+    } \textbf{M201: MongoDB Performance} -- MongoDB, \href{https://learn.mongodb.com/c/8m8_F0jdSJmwhVaylvIzEA}{\textit{certificate}}
+    \begin{onecolentry}
+        \begin{highlights}
+            % \item Helped grasping key concepts of query optimization,performance tuning.
+            \item \textbf{Related Skills}: MongoDB Aggregations, Query Optimization, and Indexing.
+        \end{highlights}
+    \end{onecolentry}
+        
+    \end{twocolentry}
+\vspace{0.1 cm}
 
-        \begin{onecolentry}
-            \textbf{Databases:} MongoDB | PostgreSQL
-        \end{onecolentry}
-        
-        \begin{onecolentry}
-            \textbf{Concepts:} Algorithms \& Data Structures | OOP | Design Patterns | Clean Code | CI/CD | AWS Cloud Services.
-        \end{onecolentry}
-        
-% \section{Volunteer Work}
+\section{Technical Skills}
+    
+    \begin{onecolentry}
+        \textbf{Programming Languages:} JavaScript (ES6+) | TypeScript | Python | C++
+    \end{onecolentry}
+    \vspace{0.1 cm}
+
+
+    \begin{onecolentry}
+        \textbf{Backend Technologies:} Node.js | Express.js | REST APIs 
+    \end{onecolentry}
+    \vspace{0.1 cm}
+
+    \begin{onecolentry}
+        \textbf{Databases:} MongoDB | PostgreSQL
+    \end{onecolentry}
+    \vspace{0.1 cm}
+
+    \begin{onecolentry}
+        \textbf{Cloud Services:} AWS | Terraform
+    \end{onecolentry}
+%     \vspace{0.1 cm}
+
+    % \section{Volunteer Work}
 %         \begin{twocolentry}{ 
 %             Oct 2017 -- Feb 2028
 %         } \textbf{Human Resources Team Member}

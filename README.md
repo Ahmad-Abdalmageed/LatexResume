@@ -4,35 +4,14 @@
 
 ## Experience
 
-**Backend Developer**, [*Dealapp*](https://dealapp.sa/tabs/home) --
-Remote Dec 2022 -- Present
-
--   Develop and maintain scalable **REST APIs** for **CRUD** operations
-    using **NodeJs**, **Express**, and **MongoDB**.
-
--   Optimize **MongoDB indexes** adhering to best practices such as
-    query coverage, ESR rule, and top-k sorting.
-
--   Apply **Design Patterns** and **Clean Code** principles for code
-    refactoring, decreasing technical debt.
-
--   Document APIs using **Swagger**, and maintain a **Markdown**-based
-    API documentation on GitHub Pages.
-
--   Participate in **Code Reviews**, ensuring a bug-free and consistent
-    codebase.
-
--   Implement **Unit & Integration tests** using **MochaJS**.
-
--   Integrate with **Third-party APIs** such as **Twilio** for SMS
-    services and **Zoho** for payments.
-
--   Contribute to **Onboarding** new team members and setting up
-    development environments.
-
--   Provide **Product Ownership** and support for cross-team
-    initiatives.
-:::
+**Backend Developer**, [*Dealapp*](https://dealapp.sa/tabs/home) -- Remote Dec 2022 -- Present
+- Develop and maintain scalable REST APIs, optimizing high-traffic CRUD operations for thousands of active users.
+- Optimize MongoDB indexes using best practices like query coverage, ESR rule, and top-k sorting for efficiency.
+- Refactored legacy code in Subscriptions, enhancing performance and driving a 50% increase in subscribed users.
+- Implement unit and integration tests using MochaJS, ensuring 90% test coverage across services.
+- Integrate with third-party APIs to enable WhatsApp messaging, leading to increased website traffic.
+- Contributed to building an AI-powered RAG solution, enabling admins to derive insights from the database.
+- Assisted in migrating the platform to Infrastructure as Code using Terraform and AWS.
 
 ## Education
 
